@@ -1,0 +1,113 @@
+/* Header */
+.app-header {
+  background: linear-gradient(90deg, #f04e30, #ff6600);
+  color: white;
+  padding: 20px;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Container Film */
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+/* Kartu Film */
+.movie {
+  background: #282c34;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 180px;
+  transition: transform 0.3s;
+  color: white;
+}
+
+.movie:hover {
+  transform: scale(1.1);
+}
+
+.movie img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.movie-title {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffcc00;
+}
+
+/* Form Pencarian */
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.search-form input {
+  padding: 15px;
+  width: 300px;
+  border: 2px solid #ff6600;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.search-form button {
+  background-color: #ff6600;
+  border: none;
+  color: white;
+  padding: 15px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.search-form button:hover {
+  background-color: #f04e30;
+  transition: background-color 0.3s ease;
+}
+
+/* Detail Film */
+.movie-detail {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+  background: #333;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.movie-detail img {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Loading */
+.loading {
+  text-align: center;
+  color: #ff6600;
+  font-size: 2rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
